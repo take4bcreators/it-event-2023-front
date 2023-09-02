@@ -8,10 +8,12 @@ body {
     width: 100vw;
 }
 
-.splash-screen {
+.load-screen {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10vh 0;
     width: 100vw;
     height: 100vh;
     background-color: #FFF;
@@ -25,9 +27,59 @@ body {
     to {display: none;}
 }
 
-.splash-screen.hide {
+.load-screen.hide {
     opacity: 0;
     animation: to-hide 0s 1 .5s forwards;
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.load-screen-img {
+    animation: fade-in .3s ease-in 1;
+}
+
+@keyframes line-scale {
+    0% {transform: scaley(1);}
+    50% {transform: scaley(0.4);}
+    100% {transform: scaley(1);}
+}
+
+.line-scale {
+    animation: fade-in .3s ease-in 1;
+}
+
+.line-scale > div {
+    background-color: #0070a0;
+    width: 4px;
+    height: 35px;
+    border-radius: 2px;
+    margin: 2px;
+    animation: line-scale 1s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+    animation-fill-mode: both;
+    display: inline-block;
+}
+
+.line-scale > div:nth-child(1) {
+    animation-delay: -0.4s;
+}
+
+.line-scale > div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.line-scale > div:nth-child(3) {
+    animation-delay: -0.2s;
+}
+
+.line-scale > div:nth-child(4) {
+    animation-delay: -0.1s;
+}
+
+.line-scale > div:nth-child(5) {
+    animation-delay: 0s;
 }
 
 .header {
