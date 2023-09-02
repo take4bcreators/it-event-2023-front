@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+
+body {
+    background-color: #6D6C9A;
+    color: #FFF;
+    height: 100%;
+    width: 100vw;
+}
+
+.splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+@keyframes to-hide {
+    to {display: none;}
+}
+
+.splash-screen.hide {
+    opacity: 0;
+    animation: to-hide 0s 1 .5s forwards;
+}
+
+.header {
+    padding: 5vmin;
+}
+
+.header-flex-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.header-flex-wrapper img {
+    height: 1.5rem;
+    width: auto;
+    margin: 0 1rem;
+}
+
+.main {
+    padding: 5vmin;
+}
+
+.hero-image-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    z-index: 100;
+}
+
+.hero-image-wrapper img {
+    width: 70vw;
+    filter: drop-shadow(1px 19px 0px rgba(0, 0, 0, 0.20));
+    transform: none;
+    transition: transform .5s;
+}
+
+.hero-image-wrapper img:hover {
+    transform: scale(0.8);
+}
+
+.hero-text-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 200;
+    width: 100vw;
+}
+
+.dish-name {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    width: 20%;
+}
+
+.catch-copy {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+

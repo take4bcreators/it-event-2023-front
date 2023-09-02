@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSAKANA-SAN.com | お魚大好き支援サイト</title>
+    <meta name="description" content="お魚大好きさんを支援するサイト">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="splash-screen">
+        <img src="images/logo.svg" alt="OSAKANA-SAN.com" width="226" height="100">
+    </div>
+    <header class="header">
+        <div class="header-logo">
+            <a href=".">
+                <div class="header-flex-wrapper">
+                    <img src="images/logoicon_white.svg" alt="OSAKANA-SAN.com" width="300" height="175">
+                    <h1>OSAKANA-SAN.com</h1>
+                </div>
+            </a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <div class="hero-image-wrapper">
+                <img src="images/burinoteriyaki.svg" alt="" width="880" height="400">
+            </div>
+            <div class="hero-text-wrapper">
+                <div class="dish-name">
+                    <h1>BURI no TERIYAKI</h1>
+                </div>
+                <div class="catch-copy">
+                    <h1>日常にさかなを。</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
