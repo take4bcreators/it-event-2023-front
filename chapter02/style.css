@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
 
 body {
-    background-color: #6D6C9A;
+    background: linear-gradient(to right, #5b86e5, #31a8b1);
     color: #FFF;
     height: 100%;
     width: 100vw;
