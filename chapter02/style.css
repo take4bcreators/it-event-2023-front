@@ -8,6 +8,10 @@ body {
     width: 100vw;
 }
 
+@keyframes to-hide {
+    to {display: none;}
+}
+
 .load-screen {
     display: flex;
     flex-direction: column;
@@ -19,16 +23,12 @@ body {
     background-color: #FFF;
     position: fixed;
     z-index: 9999;
-    opacity: 1;
+    opacity: 1;     /* 不透明度の指定 */
     transition: opacity .5s;
 }
 
-@keyframes to-hide {
-    to {display: none;}
-}
-
 .load-screen.hide {
-    opacity: 0;
+    opacity: 0;     /* 不透明度の指定 */
     animation: to-hide 0s 1 .5s forwards;
 }
 
