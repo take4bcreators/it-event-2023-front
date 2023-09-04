@@ -1,0 +1,9 @@
+{
+    "editor.renderWhitespace": "all",
+    "javascript.suggest.completeFunctionCalls": true,
+    "editor.trimAutoWhitespace": false,
+    "editor.minimap.renderCharacters": false,
+    "emmet.variables": {
+        "lang": "ja"
+    }
+}
